@@ -1,20 +1,13 @@
 <?php
-
-
-
-namespace app\models\utils;
 use Facebook\FacebookSession;
 use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookRequest;
 use Facebook\GraphUser;
-use Yii;
-use yii\web\View;
-use app\models\utils\UrlUtil;
 
 class FacebookUtil{
     
-    private static $APP_ID = "1074886019192932";
-    private static $APP_SECRET = "3d65c63165ccfd4200602d75887a2660";
+    private static $APP_ID = "";
+    private static $APP_SECRET = "";
 
     /** Url para o Facebook irá redirecionar após o login */
     private static $REDIRECT_URL = "";
