@@ -46,9 +46,7 @@ class GooglePlusUtil{
     public function requireUserInfo($token){
         $this->googleClient->setAccessToken($token);
         $plus = new \Google_Service_Plus($this->googleClient);  
-        return $plus->people->get('me');
-        
-        
+        return $plus->people->get('me');    
     }
     
     public function downloadUserImage($imageObject,$id = rand(0,1000),$large = FALSE){
