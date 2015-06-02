@@ -14,7 +14,7 @@ class FacebookUtil{
     private static $REDIRECT_URL = "";
 
     /** Caminho do diretório onde as fotos serão salvar  TEM QUE TER UMA / no final do caminho  */
-    private static $UPLOAD_DIR = "";
+    private static $UPLOAD_DIR = FCPATH.'/uploads/';
 
     /** Url para o Facebook irá redirecionar após o logout */
     private static $AFTER_LOGOUT_URL = "";
